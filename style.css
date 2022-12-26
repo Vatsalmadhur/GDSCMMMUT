@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#super{
+    height: auto;
+    width: auto;
+    border: 2px solid black;
+}
+#super.super1{
+  height:100vh;
+  width: 100vw;
+  border: 2px solid black;
+}
+/* @media screen and (max-width:768px){
+  .super{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+}
+
+} */
+#navBox{
+    width: 100%;
+    height: 64px;
+    border: 2px solid blue;
+    background-color: #F1F3F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+/* media quries here */
+@media screen and (max-width:768px) {
+  #navBox{
+  height: 45px;
+  }
+}
+@media screen and (max-width:480px) {
+  #navBox{
+  height: 40px;
+  /* background-color: blue; */
+  }
+}
+
+
+#navBox.navBox1{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    animation: down 600ms ;
+   
+
+}
+
+
+/* keyframe animation here */
+@keyframes down{
+  0%{
+      height: 64px;
+  }
+  100%{
+      height: 100%;
+  }
+  
+
+}
+@keyframes up{
+  0%{
+      height: 100%;
+  }
+  100%{
+      height: 64px;
+
+  }
+
+}
+
+
+
+#mid{
+    height: 100%;
+    width: 70%;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+
+#mid.mid1{
+    height: 60%;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    /* display: initial; */
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+
+
+}
+
+.icon{
+    height: 20px;
+    max-width: auto;
+    
+    /* border: 2px solid purple; */
+    margin: 0 20px 0px 20px;
+    /* word-wrap: break-word; */
+
+}
+
+
+/* media quries here */
+@media  screen and (max-width:768px) {
+  #mid{
+      display: none;
+  }
+  .button{
+      display: none;
+  }
+    
+    
+}
+
+
+/* .animation{
+    display: none;
+} */
+#animation{
+    display: none;
+}
+
+
+/* media quries here */
+
+
+@media  screen and (max-width:768px) {
+    #animation{
+        display: initial;
+    }
+}
+
+
+.hamIcon{
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    display: none;
+}
+
+
+/* media quries here */
+
+@media  screen and (max-width:768px) {
+  .hamIcon{
+      display: initial;
+      top: 10px;
+  }
+  
+}
+@media  screen and (max-width:480px) {
+  .hamIcon{
+      top: 8px;
+  }
+  
+}
+
+
+#logo{
+/* background-color: black; */
+    /* padding: 5px; */
+    /* z-index: 1; */
+    /* height: 100px; */
+    /* width: 100px; */
+    position: absolute;
+    top: -50px;
+    left: -40px;
+
+}
+
+/* media quries here */
+
+@media screen and (max-width:768px) {
+  #logo{
+          z-index: 1;
+          position: absolute;
+          top: -60px;
+          left: -50px;
+      
+      }
+  
+}
+
+
+
+.navText{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+/* hover effect here  */
+.navText:before{
+  content: "";
+  position:absolute;
+  top:100%;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 4px;
+  background-color:#fbbc04;
+  transition: all .5s;
+}
+.navText:hover:before{
+  width: 100%;
+}
+
+
+
+
+
+
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+
+
+
+/* Css for hero section  */
+  .hero-section1{
+    width: 100%;
+    height: 100%;
+    border: 2px solid violet;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  
+
+  .main1{
+    height: 300px;
+    width: 600px;
+    border: 2px solid red;
+  
+  }
+  @media screen and (max-width:505px){
+    .main1{
+      height: 300px;
+      width: 250px;
+      /* min-width: 50px; */
+      margin: 10px;
+    }
+  
+  }
+  .subHeading{
+    height:auto;
+    width: 90%;
+    /* display: inline-block; */
+    position: relative;
+    top: 100px;
+    left: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    /* font-size: 20px; */
+    /* border: 2px solid blue; */
+    text-align: center;
+    word-wrap: break-word;
+    animation: subHeadingTransition 6s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .subHeadingText{
+    font-size: 25px;
+    /* padding: 8px; */
+  }
+  .commonClass{
+  display: inline-block;
+  }
+  
+  
+  .G{
+    position: relative;
+    /* left: 00px; */
+    left: 10%;
+    top: 33.34%;
+    /* border: 2px solid blue; */
+    animation: leftToRight 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @media screen and (max-width:505px){
+    .G{
+      left: 10px;
+      top: 30px;
+      animation: leftToRight2 2s;
+      animation-fill-mode: forwards;
+    }
+   
+  }
+    
+  
+  .D {
+    position: relative;
+    left: 26.67%;
+    top: 66.6%;
+    animation: downToUp 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @media screen and (max-width:505px){
+    .D{
+      left: 40px;
+      top: 60px;
+      animation: downToUp2 2s;
+      animation-fill-mode: forwards;
+    }
+   
+  }
+  .S {
+    position: relative;
+    top: 0;
+    left: 26%;
+    /* right: 00px; */
+    animation: upToDown 2s;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width:505px){
+    .S{
+      left: 40px;
+      top: 0px;
+      animation: upToDown2 2s;
+      animation-fill-mode: forwards;
+    }
+   
+  }
+  .C {
+    position: relative;
+    top: 33.34%;
+    left: 41.34%;
+    animation: rightToLeft 2s;
+    animation-fill-mode: forwards;
+  }
+  @media screen and (max-width:505px){
+    .C{
+      top: 30px;
+      left: 70px;
+      animation: rightToLeft2 2s;
+      animation-fill-mode: forwards;
+    }
+   
+  }
+  
+  
+  
+  
+  @keyframes leftToRight {
+    from {
+      opacity: 10%;
+      transform: translateX(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateX(100px);
+      transition-duration: 4s;
+    }
+  }
+  
+  @keyframes leftToRight2 {
+    from {
+      opacity: 10%;
+      transform: translateX(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateX(30px);
+      transition-duration: 4s;
+    }
+  }
+  
+  @keyframes rightToLeft {
+    from {
+      opacity: 10%;
+      transform: translateX(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateX(-100px);
+      transition-duration: 4s;
+    }
+  }
+  @keyframes rightToLeft2 {
+    from {
+      opacity: 10%;
+      transform: translateX(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateX(-30px);
+      transition-duration: 4s;
+    }
+  }
+  
+  @keyframes upToDown {
+    from {
+      opacity: 10%;
+      transform: translateY(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateY(100px);
+      transition-duration: 4s;
+    }
+  }
+  @keyframes upToDown2 {
+    from {
+      opacity: 10%;
+      transform: translateY(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateY(30px);
+      transition-duration: 4s;
+    }
+  }
+  
+  @keyframes downToUp {
+    from {
+      opacity: 10%;
+      transform: translateY(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateY(-100px);
+      transition-duration: 4s;
+    }
+  }
+  @keyframes downToUp2 {
+    from {
+      opacity: 10%;
+      transform: translateY(0px);
+    }
+  
+    to {
+      opacity: 100%;
+      transform: translateY(-30px);
+      transition-duration: 4s;
+    }
+  }
+  
+  @keyframes subHeadingTransition {
+    from {
+      opacity: 0%;
+      
+    }
+  
+    to {
+      opacity: 100%;
+      transition-duration: 4s;
+    }
+  }
+
+  .main2{
+    height: 300px;
+    width: 400px;
+    border: 2px solid blue;
+  }
+
+  .hero-section2{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(130, 216, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .main3{
+    height: 300px;
+    width: 400px;
+    border: 2px solid blue;
+  }
+  .main4{
+    height: 300px;
+    width: 400px;
+    border: 2px solid blue;
+  }
+  
+  
