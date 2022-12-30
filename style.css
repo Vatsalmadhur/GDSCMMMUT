@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 @font-face {
   font-family:DuneFont ;
@@ -15,13 +16,13 @@
 #super{
     height: auto;
     width: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
  
 }
 #super.super1{
   height:100vh;
   width: 100vw;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 /* @media screen and (max-width:768px){
   .super{
@@ -34,11 +35,14 @@
 #navBox{
     width: 100%;
     height: 64px;
-    border: 2px solid blue;
-    background-color: #F1F3F4;
+    /* border: 2px solid blue; */
+    /* background-color: #F1F3F4; */
+    /* background-color: #020466; */
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* z-index: 1; */
+    /* opacity: 1; */
 
 }
 /* media quries here */
@@ -58,7 +62,10 @@
 #navBox.navBox1{
     width: 100%;
     height: 100%;
+    /* background-color: #000000; */
     /* border: 2px solid blue; */
+    background-color: #F1F3F4;
+
     /* background-color: black; */
     display: flex;
     flex-direction: column;
@@ -97,7 +104,7 @@
 #mid{
     height: 100%;
     width: 80%;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -125,8 +132,9 @@
 .icon{
     height: 30px;
     max-width: auto;
+    color: black;
     
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     /* margin: 0 20px 0px 20px; */
     margin: 0 1% 0px 1%;
     /* padding: 0 1% 0px 1%; */
@@ -173,6 +181,7 @@
     top: 17px;
     right: 17px;
     display: none;
+
 }
 
 
@@ -182,6 +191,7 @@
   .hamIcon{
       display: initial;
       top: 10px;
+      z-index: 10;
   }
   
 }
@@ -229,6 +239,15 @@
 .navText{
   font-family: 'DuneFont';
   font-size: 16px;
+  color: #fff;
+  /* font-weight:10px; */
+  position: relative;
+  z-index: 10;
+}
+.navText1{
+  font-family: 'DuneFont';
+  font-size: 16px;
+  color: #000;
   /* font-weight:10px; */
   position: relative;
 }
@@ -277,7 +296,7 @@
   }
   .line {
     fill: none;
-    stroke: black;
+    stroke: white;
     stroke-width: 6;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -311,29 +330,98 @@
   }
 
 
+  .bgimg{
+    /* background-image: url(./gdsc-bg-img/12345.jpg); */
+    /* background-size: cover; */
+    /* z-index: 10; */
+    position: relative;
+    width: 100%;
+    height:100%;
+    /* padding: 100px; */
+    overflow-y: hidden;
+  }
+  
+  .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #hills{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    /* border: 2px solid green; */
+
+    z-index: 5;
+  }
+  #moon{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 15%;
+    left: 0;
+    /* bottom: 10px; */
+    /* border: 2px solid red; */
+    z-index: 5;
+  }
+  @media screen and (max-width:505px) {
+    #moon{
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      top: 8%;
+      left: 0%;
+      /* bottom: 10px; */
+      /* border: 2px solid red; */
+      z-index: 5;
+    }
+    
+  }
+ 
+  
+
+
 
 /* Css for hero section  */
   .hero-section1{
     width: 100%;
     height: 90vh;
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
+  /* .bgvid{
+    position: absolute;
+    right: 0;
+    top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+
+  } */
   
   
 
-  .main1{
+  #main1{
     height: 300px;
     width: 600px;
-    /* border: 2px solid red; */
-    margin: 20px;
+    /* border: 1px solid red; */
+    /* margin: 20px; */
+    position: absolute;
+    /* position: static; */
+    top: 25%;
+    /* left: 0; */
+    /* z-index: 0; */
+  /* transform: translateX(100px); */
   
   }
   @media screen and (max-width:505px){
-    .main1{
+    #main1{
       height: 300px;
       width: 250px;
       /* min-width: 50px; */
@@ -348,7 +436,7 @@
     position: relative;
     top: 100px;
     left: 15px;
-    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
     /* font-size: 20px; */
     /* border: 2px solid blue; */
     text-align: center;
@@ -361,6 +449,7 @@
   .subHeadingText{
     font-family: 'DuneFont';
   font-size: 15px;
+  color: #fff;
     /* font-size: 25px; */
     /* padding: 8px; */
   }
@@ -567,6 +656,7 @@
     width: 100%;
     height: 100vh;
     border: 2px solid rgb(130, 216, 238);
+    background-color: #38aabf;
     display: flex;
     align-items: center;
     justify-content: space-around;

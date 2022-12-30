@@ -19,3 +19,24 @@ function navbarToggle() {
 
 
 
+  //Parallax section begins here
+
+  var sky = document.getElementById('sky');
+  var hills = document.getElementById('hills');
+  var moon = document.getElementById('moon');
+  var mainBox = document.getElementById('main1');
+  window.addEventListener('scroll',function(){
+    var value= this.window.scrollY;
+    console.log(value);
+    sky.style.top = value* 0.4 +'px';
+    hills.style.top = value* 0.5 +'px';
+    moon.style.left = value* 0.6 +'px';
+    // mainBox.style.top = value* 0.4 +'px';
+
+
+  })
+  
+
+
+
+
