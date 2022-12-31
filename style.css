@@ -17,12 +17,15 @@
     height: auto;
     width: auto;
     /* border: 2px solid black; */
+    border: 2px solid pink;
+    z-index: 4;
+ 
  
 }
 #super.super1{
   height:100vh;
   width: 100vw;
-  /* border: 2px solid black; */
+  border: 2px solid pink;
 }
 /* @media screen and (max-width:768px){
   .super{
@@ -35,13 +38,13 @@
 #navBox{
     width: 100%;
     height: 64px;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     /* background-color: #F1F3F4; */
-    /* background-color: #020466; */
+    background-color: #020466;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* z-index: 1; */
+    z-index: 4;
     /* opacity: 1; */
 
 }
@@ -49,11 +52,15 @@
 @media screen and (max-width:768px) {
   #navBox{
   height: 45px;
+  z-index: 4;
+
   }
 }
 @media screen and (max-width:480px) {
   #navBox{
   height: 40px;
+  z-index: 4;
+
   /* background-color: blue; */
   }
 }
@@ -63,10 +70,10 @@
     width: 100%;
     height: 100%;
     /* background-color: #000000; */
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     background-color: #F1F3F4;
-
-    /* background-color: black; */
+    z-index: 4;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,6 +116,7 @@
     align-items: center;
     justify-content: space-around;
     position: relative;
+    z-index: 4;
 
 }
 
@@ -122,7 +130,7 @@
     align-items: flex-start;
     justify-content: space-around;
     /* display: initial; */
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     top: 100px;
 
@@ -132,7 +140,7 @@
 .icon{
     height: 30px;
     max-width: auto;
-    color: black;
+
     
     /* border: 2px solid purple; */
     /* margin: 0 20px 0px 20px; */
@@ -206,7 +214,7 @@
 #logo{
 /* background-color: black; */
     /* padding: 5px; */
-    /* z-index: 1; */
+    z-index: 4;
     /* height: 100px; */
     /* width: 100px; */
     position: absolute;
@@ -219,7 +227,7 @@
 
 @media screen and (max-width:768px) {
   #logo{
-          z-index: 1;
+          z-index: 4;
           position: absolute;
           top: -60px;
           left: -50px;
@@ -242,7 +250,7 @@
   color: #fff;
   /* font-weight:10px; */
   position: relative;
-  z-index: 10;
+  z-index: 4;
 }
 .navText1{
   font-family: 'DuneFont';
@@ -349,13 +357,18 @@
     width: 100%;
     object-fit: cover;
   }
+
+  #sky{
+    z-index: 1;
+
+  }
   #hills{
     position: absolute;
     height: 100%;
     width: 100vw;
     /* border: 2px solid green; */
 
-    z-index: 5;
+    z-index: 2;
   }
   #moon{
     position: absolute;
@@ -365,8 +378,9 @@
     left: 0;
     /* bottom: 10px; */
     /* border: 2px solid red; */
-    z-index: 5;
+    z-index: 3;
   }
+  
   @media screen and (max-width:505px) {
     #moon{
       position: absolute;
@@ -376,7 +390,7 @@
       left: 0%;
       /* bottom: 10px; */
       /* border: 2px solid red; */
-      z-index: 5;
+      z-index: 3;
     }
     
   }
@@ -416,7 +430,7 @@
     /* position: static; */
     top: 25%;
     /* left: 0; */
-    /* z-index: 0; */
+    z-index: 1;
   /* transform: translateX(100px); */
   
   }
@@ -426,6 +440,7 @@
       width: 250px;
       /* min-width: 50px; */
       margin: 10px;
+      z-index: 1;
     }
   
   }
@@ -661,6 +676,7 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    z-index: 0;
   }
   .main3{
     height: 300px;

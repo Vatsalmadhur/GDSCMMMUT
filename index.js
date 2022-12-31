@@ -21,20 +21,34 @@ function navbarToggle() {
 
   //Parallax section begins here
 
+
+  // window.addEventListener("DOMContent")
+
   var sky = document.getElementById('sky');
   var hills = document.getElementById('hills');
   var moon = document.getElementById('moon');
   var mainBox = document.getElementById('main1');
   window.addEventListener('scroll',function(){
-    var value= this.window.scrollY;
-    console.log(value);
-    sky.style.top = value* 0.4 +'px';
-    hills.style.top = value* 0.5 +'px';
-    moon.style.left = value* 0.6 +'px';
-    // mainBox.style.top = value* 0.4 +'px';
+    var valueX= this.window.scrollX;
+    var valueY= this.window.scrollY;
+    // setTranslate(0,valueY*0.2*0.2,sky);
+    // setTranslate(0,valueY*0.2,hills);
+    // setTranslate(10,valueY*0.4,moon);
+
+
+    
+    console.log(valueX,valueY);
+    sky.style.top = valueY* 0.25 +'px';
+    hills.style.top = valueY* 0.2 +'px';
+    moon.style.left = valueY* 0.15 +'px';
+    // mainBox.style.top = valueY* 0.4 +'px';
 
 
   })
+
+  // function setTranslate(x,y,ele){
+  //   ele.style.transform = "translate3D("+ x +","+ y +"px,0";
+  // }
   
 
 
