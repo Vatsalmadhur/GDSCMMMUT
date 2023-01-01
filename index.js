@@ -28,6 +28,10 @@ function navbarToggle() {
   var hills = document.getElementById('hills');
   var moon = document.getElementById('moon');
   var mainBox = document.getElementById('main1');
+  //lower section
+  var lowerBox1 = document.getElementById('main3');
+  var lowerBox2 = document.getElementById('main4');
+
   window.addEventListener('scroll',function(){
     var valueX= this.window.scrollX;
     var valueY= this.window.scrollY;
@@ -42,6 +46,9 @@ function navbarToggle() {
     hills.style.top = valueY* 0.2 +'px';
     moon.style.left = valueY* 0.15 +'px';
     // mainBox.style.top = valueY* 0.4 +'px';
+    lowerBox1.style.left=valueY*0.8 + 'px';
+    lowerBox2.style.right=valueY*0.8 + 'px';
+
 
 
   })
