@@ -42,7 +42,7 @@ border: 2px solid pink;
   background-color: #020466;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 4;
   /* opacity: 1; */
 
