@@ -41,13 +41,26 @@ function navbarToggle() {
 
 
     
-    console.log(valueX,valueY);
+    // console.log(valueX,valueY);
     sky.style.top = valueY* 0.25 +'px';
     hills.style.top = valueY* 0.2 +'px';
     moon.style.left = valueY* 0.15 +'px';
     // mainBox.style.top = valueY* 0.4 +'px';
-    lowerBox1.style.left=valueY*0.8 + 'px';
-    lowerBox2.style.right=valueY*0.8 + 'px';
+    lowerBox1.style.left=valueY*0.9 + 'px';
+    lowerBox2.style.right=valueY*0.9 + 'px';
+    
+    
+    if(window.matchMedia('max-width:830px')){
+    //   lowerBox1.style.left=valueY*0.4 + 'px';
+    // lowerBox2.style.right=valueY*0.4 + 'px';
+      // console.log('got it')
+    }
+    else if(window.matchMedia('max-width:830px')){
+      
+    //   lowerBox1.style.left=valueY*0.8 + 'px';
+    // lowerBox2.style.right=valueY*0.8 + 'px';
+
+    }
 
 
 
@@ -56,6 +69,9 @@ function navbarToggle() {
   // function setTranslate(x,y,ele){
   //   ele.style.transform = "translate3D("+ x +","+ y +"px,0";
   // }
+
+
+ 
   
 
 
