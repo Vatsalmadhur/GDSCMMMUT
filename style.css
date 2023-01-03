@@ -17,7 +17,7 @@ src: url(./Return-Space/Return_Space.otf);
   height: auto;
   width: auto;
   /* border: 2px solid black; */
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   z-index: 4;
 
 
@@ -37,13 +37,13 @@ border: 2px solid pink;
 #navBox{
   width: 100%;
   height: 64px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   /* background-color: #F1F3F4; */
-  background-color: #020466;
+  /* background-color: #020466; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 4;
+  z-index: 10;
   /* opacity: 1; */
 
 }
@@ -69,15 +69,16 @@ z-index: 4;
   width: 100%;
   height: 100%;
   /* background-color: #000000; */
-  border: 2px solid blue;
-  background-color: #F1F3F4;
+  /* border: 2px solid blue; */
+  background-color: #2b272e;
   z-index: 4;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   animation: down 600ms ;
+  position: relative;
  
 
 }
@@ -461,6 +462,15 @@ z-index: -10;
   animation: subHeadingTransition 6s;
   animation-fill-mode: forwards;
 }
+@media screen and (max-width:505px) {
+  .subHeading{
+    
+    top: 40px;
+    left: 40px;
+   
+  }
+  
+}
 
 
 .subHeadingText{
@@ -470,6 +480,7 @@ color: #fff;
   /* font-size: 25px; */
   /* padding: 8px; */
 }
+
 .commonClass{
 display: inline-block;
 }
