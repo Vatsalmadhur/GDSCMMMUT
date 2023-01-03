@@ -721,7 +721,7 @@ z-index:0;
     height: 300px;
     width:100%;
     border: 2px solid blue;
-    margin:0;
+
 
   
   }
@@ -733,6 +733,12 @@ z-index:0;
   padding: 50px 0;
   font-size: 70px;
   color: #2d286c;
+}
+@media screen and (max-width:480px) {
+  .about1{
+  font-size: 50px;
+  }
+  
 }
 #main4{
   height: 50%;
