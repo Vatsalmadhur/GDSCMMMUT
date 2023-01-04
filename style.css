@@ -3,12 +3,14 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+html{
+  cursor: pointer;
+}
 @font-face {
 font-family:DuneFont ;
 src: url(./Dune-Rise-Font/Dune_Rise.otf);
 /* font-weight: 10px; */
 }
-
 #super{
   height: auto;
   width: auto;
@@ -680,7 +682,7 @@ display: inline-block;
   width: 100%;
   height: 100vh;
   /* border: 2px solid red; */
-  background-color: #d1c6f0;
+  background-color: #d1c6f065;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -705,9 +707,11 @@ z-index:0;
 #main3 {
   height: 50%;
   width: 40%;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  background-color: rgba(103, 103, 207, 0.37);
   position: sticky;
   margin-right: 50px ;
+  border-radius: 16px;
   
  
 
@@ -717,6 +721,7 @@ z-index:0;
     height: 300px;
     width: 70%;
     border: 2px solid blue;
+  background-color: rgba(103, 103, 207, 0.555);
     margin: 5px;
 
   
@@ -728,6 +733,8 @@ z-index:0;
     height: 300px;
     width:100%;
     border: 2px solid blue;
+  background-color: rgba(103, 103, 207, 0.555);
+
 
 
   
@@ -739,7 +746,8 @@ z-index:0;
   text-align: center;
   padding: 50px 0;
   font-size: 70px;
-  color: #2d286c;
+  font-weight: 800;
+  color: rgba(103, 103, 207, 0.555);
 }
 @media screen and (max-width:480px) {
   .about1{
@@ -755,9 +763,10 @@ z-index:0;
   margin-left: 50px ;
 background: rgba(255, 255, 255, 0.26);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(0px);
 -webkit-backdrop-filter: blur(0px);
+
 
 
 }
@@ -781,6 +790,12 @@ backdrop-filter: blur(0px);
   
   }
   
+}
+.about2{
+  text-align: center;
+  font-size: 20px;
+margin: 30px;
+
 }
 
 .hero-section3{
