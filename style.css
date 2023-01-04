@@ -8,10 +8,6 @@ font-family:DuneFont ;
 src: url(./Dune-Rise-Font/Dune_Rise.otf);
 /* font-weight: 10px; */
 }
-@font-face {
-font-family: 'ReturnSpace';
-src: url(./Return-Space/Return_Space.otf);
-}
 
 #super{
   height: auto;
