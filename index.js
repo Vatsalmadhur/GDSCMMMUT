@@ -42,7 +42,7 @@ function navbarToggle() {
 
     
     // console.log(valueX,valueY);
-    sky.style.top = valueY* 0.25 +'px';
+    sky.style.top = valueY* 0.45 +'px';
     hills.style.top = valueY* 0.2 +'px';
     moon.style.left = valueY* 0.15 +'px';
     // mainBox.style.top = valueY* 0.4 +'px';
