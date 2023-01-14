@@ -800,13 +800,108 @@ margin: 30px;
 
 .hero-section3{
   width: 100%;
-  height: 100vh;
+  height: auto;
   border: 2px solid green;
-  /* background-color: #38aabf; */
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  position: absolute;
-  z-index: 0; */
+  background-color: #d1c6f065;
+
+  
+  
 }
+
+.mainOfEvents{
+  width: 100%;
+  min-height:  60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7fbfb45;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.heading {
+  display: flex;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  height: 30%;
+  width: 100vw;
+  justify-content: center;
+  /* font-size: large; */
+  /* border: 2px solid green; */
+  
+}
+.heading h1{
+  font-size: 50px;
+  font-family: DuneFont;
+   margin-top: 20px;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: #1f003b;
+}
+.profile-card{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: rgba(219, 167, 243, 0.034);
+  border-style: solid;
+   padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(249, 247, 249, 0.4);
+  transition: .6s;
+  margin: 20px;
+}
+.profile-card:hover{
+  border-radius: 5px;
+  height: min-content;
+  border-style: solid;
+}
+.profile-card .imgBoxOfEvents{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+  /* border-style: solid; */
+}
+.profile-card:hover .imgBoxOfEvents{
+  transform: translateY(-60px);
+}
+.imgBoxOfEvents img{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px rgba(79, 77, 77, 0.4);
+  transition: .6s;
+}
+.profile-card:hover img{
+  border-radius: 10px;
+}
+.captionOfEvents{
+  text-align: center;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: .6s;
+  padding-top: 40px;
+  height: min-content;
+  /* border-style: solid; */
+}
+.profile-card:hover .captionOfEvents{
+  opacity: 1;
+}
+.captionOfEvents h3{
+  padding-bottom: 5px;
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-style: oblique;
+}
+.captionOfEvents p{
+  font-size: 16px;
+  color: #0c52a1;
+  margin: 2px 0 9px 0;
+}
+
+
+
+
