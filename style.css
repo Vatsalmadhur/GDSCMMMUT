@@ -678,7 +678,7 @@ display: inline-block;
 .hero-section2{
   width: 100%;
   height: 100vh;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   background-color: #d1c6f065;
   display: flex;
   align-items: center;
@@ -791,8 +791,37 @@ backdrop-filter: blur(0px);
 margin: 30px;
 
 }
-
 .hero-section3{
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.headingOfAbout{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'DuneFont';
+  font-weight: 1000;
+  margin-top: 10px;
+}
+.main5{
+  height: 300px;
+  width: 400px;
+  border: 2px solid red;
+}
+.main6{
+  height: 300px;
+  width: 400px;
+  border: 2px solid red;
+}
+
+
+
+
+
+
+.hero-section4{
   width: 100%;
   height: auto;
   border: 2px solid green;
@@ -816,7 +845,7 @@ margin: 30px;
   background-color: #f7fbfb45;
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25); */
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
   border-radius: 4px;
   flex-wrap: wrap;
   margin: 20px;
@@ -913,18 +942,18 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .buttonOuter{
   height: 35px;
-  min-width: 200px;
+  min-width: 230px;
   width: auto;
   position: relative;
   background-color: rgba(103, 103, 207, 0.37);
   font-family: 'DuneFont';
   color: black;
   text-decoration: none;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 .buttonOuter:hover{
   letter-spacing: 10px;
