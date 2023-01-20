@@ -1056,7 +1056,7 @@ h2 {
   width: 100%;
   height:auto;
   border: 2px solid green;
-  background-color: #fff;
+  background-color: rgb(255, 253, 253);
   /* display: flex;
   align-items: center;
   justify-content: center;
@@ -1064,7 +1064,7 @@ h2 {
 }
 
 .hero-section5-bg{
-  height: 50vh;
+  height: 70vh;
   width:100%;
   background-color: #ea4435e1;
 
@@ -1079,7 +1079,7 @@ h2 {
   .hero-section5-bg{
 height: auto;
 border-radius: 35% 25% 32% 26% / 52% 0% 47% 0%;
-border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
+/* border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%; */
   }
   
 }
@@ -1090,22 +1090,36 @@ border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
   
 }
 .main7{
-  height: 300px;
-  width: 400px;
+  height: auto;
+  width: 300px;
   border: 2px solid red;
   margin: 10px;
   color: white;
+  /* text-align: center; */
 
 
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:485px) {
   .main7{
- width: 100%;
+ width:80%;
+ margin-top: 60px;
+ margin-left: 10px;
   }
   
 }
+.headOfTeams{
+  font-size: 20px;
+  font-family: 'DuneFont';
+  font-weight: 1000;
+  padding: 10px;
+}
+.bodyOfTeams{
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(221, 220, 220);
+}
 .main8{
-  height: 300px;
+  height: auto;
   width: 400px;
   border: 2px solid red;
   margin: 10px;
@@ -1118,9 +1132,25 @@ border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
   }
   
 }
+.imgOfTeams{
+  height: 350px;
+  width: 400px;
+}
+@media screen and (max-width:410px){
+  .imgOfTeams{
+    height: 200px;
+    width: 300px;
+  }
+  
+}
 
 
 
 
 
+/* footer  */
+.footer{
+  height: 100vh;
+  width: 100vw;
 
+}
