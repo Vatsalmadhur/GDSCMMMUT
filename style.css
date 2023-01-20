@@ -213,7 +213,7 @@ z-index: 4;
   /* height: 100px; */
   /* width: 100px; */
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: -40px;
 
 }
@@ -672,13 +672,13 @@ display: inline-block;
 .main2{
   height: 300px;
   width: 400px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .hero-section2{
   width: 100%;
   height: 100vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: #d1c6f065;
   display: flex;
   align-items: center;
@@ -717,7 +717,7 @@ z-index:0;
   #main3{
     height: 300px;
     width: 70%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   background-color: rgba(103, 103, 207, 0.555);
     margin: 5px;
 
@@ -729,7 +729,7 @@ z-index:0;
   #main3{
     height: 300px;
     width:100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   background-color: rgba(103, 103, 207, 0.555);
 
 
@@ -769,7 +769,7 @@ backdrop-filter: blur(0px);
   #main4{
     height: 300px;
     width:70%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 5px;
 
   
@@ -780,7 +780,7 @@ backdrop-filter: blur(0px);
   #main4{
     height: 300px;
     width:100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 5px;
   
   }
@@ -799,7 +799,7 @@ margin: 30px;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 @media screen and (max-width:810px) {
   .hero-section3{
@@ -863,7 +863,7 @@ margin: 30px;
 .hero-section4{
   width: 100%;
   height: auto;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background-color: #d1c6f065;
   display: flex;
   align-items: center;
@@ -915,9 +915,9 @@ h2 {
   position: relative;
   width: 160px;
   height: 160px;
-  /* background: rgba(219, 167, 243, 0.034); */
-  background-color: rgba(103, 103, 207, 0.192);
-  border: 2px solid blue;
+  background: #fbbc04;
+  /* background-color: rgba(103, 103, 207, 0.192); */
+  /* border: 2px solid blue; */
   padding: 30px;
   border-radius: 50%;
   box-shadow: 0 0 22px rgba(249, 247, 249, 0.4);
@@ -988,10 +988,12 @@ h2 {
   min-width: 230px;
   width: auto;
   position: relative;
-  background-color: rgba(103, 103, 207, 0.37);
+  /* background-color: rgba(103, 103, 207, 0.37); */
+  background-color: #fbbc04;
   font-family: 'DuneFont';
   color: black;
   text-decoration: none;
+  border-radius: 4px;
   /* border: 2px solid green; */
 }
 .buttonOuter:hover{
@@ -1006,29 +1008,29 @@ h2 {
 .movingElement::before{
   content:'';
   position: absolute;
-  top: -8px;
+  top: -4px;
   left: 80%;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   background-color: rgb(103, 103, 207);
   transition: 0.5s;
 }
 .buttonOuter:hover .movingElement::before{
-  width: 25px;
+  width: 15px;
   left: 10%;
 }
 .movingElement::after{
   content:'';
   position: absolute;
-  bottom: -8px;
+  bottom: -4px;
   right: 80%;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   background-color: rgba(103, 103, 207);
   transition: 0.5s;
 }
 .buttonOuter:hover .movingElement::after{
-  width: 25px;
+  width: 15px;
   right: 10%;
 }
 .buttonText{
@@ -1041,13 +1043,75 @@ h2 {
 }
 
 
-/* .hero-section4{
+.hero-section5{
   width: 100%;
-  height: 100vh;
+  height:auto;
   border: 2px solid green;
-  background-color: #d1c6f065;
+  background-color: #fff;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.hero-section5-bg{
+  height: 50vh;
+  width:100%;
+  background-color: #ea4435e1;
+
+  border-radius: 26% 25% 21% 26% / 71% 0% 53% 0%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-} */
+  flex-wrap: wrap;
+  
+}
+@media screen and (max-width:850px) {
+  .hero-section5-bg{
+height: auto;
+border-radius: 35% 25% 32% 26% / 52% 0% 47% 0%;
+border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
+  }
+  
+}
+@media screen and (max-width:480px) {
+  .hero-section5-bg{
+border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
+  }
+  
+}
+.main7{
+  height: 300px;
+  width: 400px;
+  border: 2px solid red;
+  margin: 10px;
+  color: white;
+
+
+}
+@media screen and (max-width:425px) {
+  .main7{
+ width: 100%;
+  }
+  
+}
+.main8{
+  height: 300px;
+  width: 400px;
+  border: 2px solid red;
+  margin: 10px;
+
+
+}
+@media screen and (max-width:425px) {
+  .main8{
+ width: 100%;
+  }
+  
+}
+
+
+
+
+
+
