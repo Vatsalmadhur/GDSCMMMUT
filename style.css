@@ -792,6 +792,12 @@ backdrop-filter: blur(0px);
 margin: 30px;
 
 }
+.outer-hero-section3{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+flex-direction: column;
+}
 .hero-section3{
   height: 60vh;
   width: 100vw;
@@ -814,6 +820,9 @@ margin: 30px;
   font-weight: 1000;
   margin-top: 10px;
   padding: 10px;
+  background-color: #ea4435e1;
+  /* width: 50%; */
+  border-radius: 25px;
 }
 #aboutImg{
   width: 400px;
