@@ -836,7 +836,7 @@ flex-direction: column;
   
 }
 .main5{
-  height: 300px;
+  height: 400px;
   width: 400px;
   /* border: 2px solid red; */
   margin: 10px;
@@ -925,7 +925,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(103, 103, 207, 0.37);
+  /* background-color: rgba(103, 103, 207, 0.37); */
 
   /* background-color: #f7fbfb3a; */
   /* background-color: rgba(103, 103, 207, 0.37); */
@@ -936,6 +936,49 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692);
   border-radius: 10px;
   flex-wrap: wrap;
   margin: 20px;
+  position: relative;
+}
+.mainOfEvents::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 150px;
+  /* background-color: black; */
+
+  border-top: 20px solid #8e6cda;
+  border-left: 20px solid #8e6cda;
+  border-radius: 10px;
+
+}
+@media screen and (max-width:425px){
+  .mainOfEvents::before{
+    height: 100px;
+    width: 100px;
+  }
+  
+}
+.mainOfEvents::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: 150px;
+  /* background-color: black; */
+
+  border-bottom: 20px solid #8e6cda;
+  border-right: 20px solid #8e6cda;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media screen and (max-width:425px){
+  .mainOfEvents::after{
+    height: 100px;
+    width: 100px;
+  }
+  
 }
 .heading {
   display: flex;
@@ -1063,7 +1106,7 @@ h2 {
   left: 80%;
   height: 10px;
   width: 10px;
-  background-color: rgb(103, 103, 207);
+  background-color: #8e6cda;
   transition: 0.5s;
 }
 .buttonOuter:hover .movingElement::before{
@@ -1077,7 +1120,7 @@ h2 {
   right: 80%;
   height: 10px;
   width: 10px;
-  background-color: rgba(103, 103, 207);
+  background-color: #8e6cda;
   transition: 0.5s;
 }
 .buttonOuter:hover .movingElement::after{
