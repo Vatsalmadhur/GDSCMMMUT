@@ -6,7 +6,7 @@
 @font-face {
 font-family:DuneFont ;
 src: url(./Dune-Rise-Font/Dune_Rise.otf);
-/* font-weight: 10px; */
+/* font-weight: 1000; */
 }
 #super{
   height: auto;
@@ -705,7 +705,7 @@ z-index:0;
   height: 320px;
   width: 450px;
   /* border: 2px solid blue; */
-  background-color: rgba(103, 103, 207, 0.37);
+  background-color: #6c4fbdb6;
   position: sticky;
   margin-right: 50px ;
   border-radius: 16px;
@@ -744,7 +744,7 @@ z-index:0;
   padding: 50px 0;
   font-size: 70px;
   font-weight: 800;
-  color: rgba(103, 103, 207, 0.555);
+  color: #6c4fbdb6;
 }
 @media screen and (max-width:480px) {
   .about1{
