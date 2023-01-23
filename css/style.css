@@ -834,8 +834,8 @@ color: rgba(255, 255, 255, 0.678);
   border-radius: 25px;
 }
 #aboutImg{
-  width: 400px;
- height: 400px;
+  width: 500px;
+ height: 500px;
 }
 @media screen and (max-width:810px) {
   #aboutImg{
@@ -845,8 +845,8 @@ color: rgba(255, 255, 255, 0.678);
   
 }
 .main5{
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 450px;
   /* border: 2px solid red; */
   margin: 10px;
 }
