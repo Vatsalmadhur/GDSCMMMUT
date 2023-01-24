@@ -685,7 +685,7 @@ display: inline-block;
 .hero-section2{
   width: 100%;
   height: 100vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* margin-bottom: 20px; */
   /* background-color: #d1c6f065; */
   display: flex;
