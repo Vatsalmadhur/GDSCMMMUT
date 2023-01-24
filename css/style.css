@@ -135,6 +135,9 @@ z-index: 4;
 
 
 }
+#mid a{
+  text-decoration: none;
+}
 
 .icon{
   height: 30px;
@@ -682,13 +685,13 @@ display: inline-block;
 .hero-section2{
   width: 100%;
   height: 100vh;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   /* margin-bottom: 20px; */
   /* background-color: #d1c6f065; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   /* position: absolute; */
   z-index: 0;
   overflow-x: hidden;
@@ -710,10 +713,12 @@ z-index:0;
   height: 320px;
   width: 450px;
   /* border: 2px solid blue; */
-  background-color: #6c4fbdb6;
-  position: sticky;
-  margin-right: 50px ;
-  border-radius: 16px;
+  color: #8e6cda;
+  margin-left: 50px ;
+background: rgba(255, 255, 255, 0.26);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(0px);
   
  
 
@@ -761,13 +766,16 @@ z-index:0;
   height: 320px;
   width: 450px;
   /* border: 2px solid blue; */
+  /* position: sticky; */
+  background-color: #6c4fbdb6;
   position: sticky;
-  margin-left: 50px ;
-background: rgba(255, 255, 255, 0.26);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(0px);
+  margin-right: 50px ;
+  border-radius: 16px;
+  
 /* -webkit-backdrop-filter: blur(0px); */
+/* display: flex;
+align-items: center;
+flex-wrap: wrap; */
 
 }
 @media screen and (max-width:768px) {
