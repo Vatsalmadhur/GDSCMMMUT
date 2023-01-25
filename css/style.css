@@ -719,6 +719,7 @@ background: rgba(255, 255, 255, 0.26);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
 backdrop-filter: blur(0px);
+/* z-index: 10; */
   
  
 
@@ -761,7 +762,7 @@ backdrop-filter: blur(0px);
   font-size: 50px;
   }
   
-}
+} 
 #main4{
   height: 320px;
   width: 450px;
@@ -924,6 +925,8 @@ font-family:'Quicksand';
 
   /* border: 2px solid green; */
   /* background-color: #d1c6f065; */
+
+  
   
 
   display: flex;
