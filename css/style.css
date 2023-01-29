@@ -3,6 +3,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+body.active{
+  background-color: black;
+}
 @font-face {
 font-family:DuneFont ;
 src: url(./Dune-Rise-Font/Dune_Rise.otf);
