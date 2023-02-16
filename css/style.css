@@ -728,7 +728,7 @@ display: inline-block;
 .greenBar{
   height: 10px;
   width: 100%;
-  background-color: #34a853;
+  background-color: rgba(52, 168, 83, 0.739);
   /* border: 2px solid red; */
 }
 .blueBar{
@@ -878,7 +878,7 @@ flex-wrap: wrap; */
 }
 .about2{
   text-align: center;
-  font-size: 15px;
+  font-size: 22px;
 margin: 30px;
 font-family:'Barlow';
 
@@ -1254,7 +1254,7 @@ font-family:'Barlow';
   width: 100%;
   height:auto;
   /* border: 2px solid green; */
-  background-color: rgb(255, 253, 253);
+  background-color: rgba(255, 253, 253, 0);
   margin-top: 50px;
   /* display: flex;
   align-items: center;
