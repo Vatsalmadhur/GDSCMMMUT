@@ -3,9 +3,6 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-body.active{
-  background-color: black;
-}
 @font-face {
 font-family:DuneFont ;
 src: url(./Dune-Rise-Font/Dune_Rise.otf);
@@ -893,6 +890,8 @@ color: white;
   align-items: center;
   /* justify-content: space-around; */
 flex-direction: column;
+/* background-color: #d1c6f065; */
+
 }
 .hero-section3{
   height: auto;
@@ -901,6 +900,8 @@ flex-direction: column;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-color: #d1c6f065;
+
   /* border: 2px solid black; */
 
   
@@ -950,18 +951,18 @@ color: rgb(70, 69, 69);
 
 
 .main6{
-  height: 350px;
-  width:450px;
+  height: 450px;
+  width:550px;
   /* border: 2px solid red; */
-  background-color: #8e6cda;
+  /* background-color: #8e6cda; */
   border-radius: 20px;
   /* border-radius: 60% 40% 29% 71% / 63% 50% 50% 37%  ; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692);
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692); */
 
   margin: 10px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -976,23 +977,24 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692);
 }
 .inner-main6-1{
   height: auto;
-  width: 300px;
+  width: 550px;
   /* border: 2px solid black; */
-  color: white;
+  color: black;
   font-family: "DuneFont";
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 1000;
   padding: 10px;
   word-wrap: break-word;
 }
 .inner-main6-2{
   height: auto;
-  width: 300px;
+  width: auto;
   /* border: 2px solid black; */
 font-family:'Barlow';
-  color: white;
-  font-size: 13px;
+  color: black;
+  font-size: 30px;
   padding: 10px;
+  font-weight: 1000;
 
 }
 
@@ -1008,7 +1010,7 @@ font-family:'Barlow';
   
 
   /* border: 2px solid green; */
-  background-color: #d1c6f065;
+  /* background-color: #d1c6f065; */
 
   
   

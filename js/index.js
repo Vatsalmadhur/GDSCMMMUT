@@ -62,11 +62,14 @@ window.addEventListener("scroll", function () {
 
 //dark mode toggle
 const body = document.querySelector('body');
+const main3 = document.getElementById('main3');
 const toggle = document.getElementById('toggle');
+var link = document.getElementById("lnk");
 toggle.onclick=function(){
     toggle.classList.toggle('active');
-    body.classList.toggle('active');
 
 }
+
+ 
 
 
