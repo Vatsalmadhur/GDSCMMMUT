@@ -70,7 +70,7 @@ z-index: 4;
   height: 100%;
   /* background-color: #000000; */
   /* border: 2px solid blue; */
-  background-color: #2b272e;
+  background-color: #fff;
   z-index: 4;
   /* background-color: black; */
   display: flex;
@@ -249,9 +249,9 @@ z-index: 4;
 
 .navText{
 font-family: 'DuneFont';
-font-size: 16px;
+font-size: 20px;
 color: #000;
-/* font-weight:10px; */
+font-weight:500;
 position: relative;
 z-index: 4;
 }
@@ -307,7 +307,7 @@ height:50px;
 }
 .line {
   fill: none;
-  stroke: white;
+  stroke: black;
   stroke-width: 6;
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -486,6 +486,23 @@ color: #000;
 font-weight: 700;
   /* font-size: 25px; */
   /* padding: 8px; */
+}
+.subHeadingLine{
+  width: 200px;
+  height: 200px;
+/* border: 2px solid red; */
+position: absolute;
+top: -60px;
+left: 155px;
+}
+@media screen and (max-width:505px) {
+  .subHeadingLine{
+    
+    top: -30px;
+    left: 5px;
+   
+  }
+  
 }
 /* button  */
 #toggle{
@@ -772,7 +789,7 @@ display: inline-block;
   justify-content: space-around;
   flex-wrap: wrap;
   /* position: absolute; */
-  z-index: 0;
+  z-index: 100;
   overflow-x: hidden;
   
 }
@@ -892,13 +909,23 @@ color: white;
 .outer-hero-section3{
   display: flex;
   align-items: center;
+  /* border: 3px solid red; */
   /* justify-content: space-around; */
-flex-direction: column;
-/* background-color: #d1c6f065; */
+/* flex-direction: column; */
+background-color: #d1c6f065;
+/* word-break: break-all; */
 
 }
+@media screen and (max-width:750px) {
+  .outer-hero-section3{
+    flex-direction: column;
+  }
+  
+}
+
 .hero-section3{
   height: auto;
+  min-height: 80vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -910,12 +937,7 @@ flex-direction: column;
 
   
 }
-@media screen and (max-width:810px) {
-  .hero-section3{
-    height: auto;
-  }
-  
-}
+
 .headingOfAbout{
   text-align: center;
   font-size: 40px;
@@ -925,8 +947,15 @@ flex-direction: column;
   padding: 10px;
   /* background-color: #ea4435e1; */
 color: rgb(70, 69, 69);
-  /* width: 50%; */
+  width: 250px;
   border-radius: 25px;
+}
+@media screen and (max-width:480px) {
+  .headingOfAbout{
+    width: 250px;
+    font-size: 28px;
+  }
+  
 }
 #aboutImg{
   width: 500px;
@@ -947,17 +976,20 @@ color: rgb(70, 69, 69);
 }
 @media screen and (max-width:425px) {
   .main5{
-  width: 100%;
-  height: 70%;
+  min-width: 60%;
+  height: 10%;
+  
   }
   
 }
 
 
 .main6{
-  height: 450px;
+  height: auto;
+  min-height: 450px;
   width:550px;
-  /* border: 2px solid red; */
+  /* min-width: 90%; */
+  /* border: 2px solid blue; */
   /* background-color: #8e6cda; */
   border-radius: 20px;
   /* border-radius: 60% 40% 29% 71% / 63% 50% 50% 37%  ; */
@@ -974,7 +1006,7 @@ color: rgb(70, 69, 69);
 }
 @media screen and (max-width:425px) {
   .main6{
-    height: 350px;
+    height: 250px;
  width: 100%;
   }
   
@@ -995,7 +1027,7 @@ color: rgb(70, 69, 69);
   width: auto;
   /* border: 2px solid black; */
 font-family:'Barlow';
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   padding: 10px;
   font-weight: 1000;
@@ -1003,15 +1035,16 @@ font-family:'Barlow';
 }
 .main6-icons-outer{
   height: 200px;
-  width: 500px;
+  width: 100%;
   /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content:space-between ;
+  flex-wrap: wrap;
 }
 .main6-icon{
-  height: 100px;
-  width: 100px;
+  height: 94px;
+  width: 94px;
   /* border: 2px solid blue; */
 }
 
@@ -1068,8 +1101,8 @@ font-family:'Barlow';
   position: absolute;
   top: 0;
   left: 0;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   /* background-color: black; */
 
   border-top: 20px solid #8e6cda;
@@ -1089,8 +1122,8 @@ font-family:'Barlow';
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   /* background-color: black; */
 
   border-bottom: 20px solid #8e6cda;
@@ -1137,8 +1170,8 @@ h2 {
 }
 .profile-card{
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   background: #fbbc04;
   /* background-color: rgba(103, 103, 207, 0.192); */
   /* border: 2px solid blue; */
@@ -1302,7 +1335,7 @@ border-radius: 35% 25% 32% 26% / 52% 0% 47% 0%;
 }
 @media screen and (max-width:480px) {
   .hero-section5-bg{
-border-radius: 51% 24% 44% 25% / 52% 0% 47% 0%;
+border-radius: 40% 24% 44% 25% / 40% 0% 47% 0%;
   }
   
 }
