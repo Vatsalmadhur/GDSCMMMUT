@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  /* overflow: hidden; */
 }
 @font-face {
 font-family:DuneFont ;
@@ -249,7 +250,7 @@ z-index: 4;
 .navText{
 font-family: 'DuneFont';
 font-size: 16px;
-color: #fff;
+color: #000;
 /* font-weight:10px; */
 position: relative;
 z-index: 4;
@@ -350,6 +351,9 @@ height:50px;
   /* padding: 100px; */
   /* overflow-x: hidden; */
   overflow-y: hidden;
+  background-image: url(../bgImg/bg.svg);
+  background-size: cover;
+background-attachment: fixed;
 
 }
 
@@ -477,8 +481,9 @@ z-index: -10;
 
 .subHeadingText{
   font-family: 'DuneFont';
-font-size: 15px;
-color: #fff;
+font-size: 18px;
+color: #000;
+font-weight: 700;
   /* font-size: 25px; */
   /* padding: 8px; */
 }
@@ -878,10 +883,9 @@ flex-wrap: wrap; */
 }
 .about2{
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
 margin: 30px;
 font-family:'Barlow';
-
 color: white;
 
 }
@@ -960,9 +964,9 @@ color: rgb(70, 69, 69);
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.692); */
 
   margin: 10px;
-  /* display: flex; */
+  display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -997,6 +1001,20 @@ font-family:'Barlow';
   font-weight: 1000;
 
 }
+.main6-icons-outer{
+  height: 200px;
+  width: 500px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+}
+.main6-icon{
+  height: 100px;
+  width: 100px;
+  /* border: 2px solid blue; */
+}
+
 
 
 
