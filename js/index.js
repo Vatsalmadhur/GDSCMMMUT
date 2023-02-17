@@ -31,7 +31,10 @@ const main3 = document.getElementById('main3');
 const main4 = document.getElementById('main4');
 
 const navBox = document.getElementById('navBox');
-// const navTxt = document.getElementById('components');
+const navTxt = document.querySelectorAll('#navText');
+const hamLine = document.querySelectorAll('#hamLine');
+
+
 
 
 
@@ -58,7 +61,9 @@ toggle.onclick=function(){
     hoe.classList.toggle('active')
 
     navBox.classList.toggle('active')
-    // navTxt.classList.toggle('active')
+    navTxt.forEach(element =>{element.classList.toggle('active')}) 
+    hamLine.forEach(element =>{element.classList.toggle('active')})   
+
 
     hs2.classList.toggle('active')
     main3.classList.toggle('active')
